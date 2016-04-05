@@ -15,7 +15,6 @@ The following steps were involved during the analysis and are programmed in R sc
 7. Subject identification numbers (from step 3), activity labels (from step 5) were merged to measurement values from step 2 side by side without altering the sorting order in original dataset.
 8. Only the following columns were left in dataset: patient identification number, activity labels and Measurements from containing mean and std names.
 9. final data_combined was sorted by Subject identification numbers and Activity
-10. data_combined was saved as data_combined.Rds and can be loaded/read by using readRDS() function, e.g. dt <- readRDS(file = './data_combined.Rds')
-11. Average values of each measurements were calculated for each activity and each subject and resulting dataset was saved as summary_data.Rds and can be loaded/read by using readRDS() function, e.g. dt <- readRDS(file = './summary_data.Rds')
+10. Average values of each measurements were calculated for each activity and each subject and resulting dataset was saved as summary_data.
  
  [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
