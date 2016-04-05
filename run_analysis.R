@@ -82,4 +82,4 @@ data_combined <- arrange(data_combined, SubjectID, Activity)
 grouped_data_combined <- group_by(data_combined, SubjectID, Activity, Measurment)
 summary_data <- summarise(grouped_data_combined, Average = mean(Value))
 
-saveRDS(summary_data, file = './summary_data.Rds')
+write.table(summary_data, row.names = FALSE, file = "./summary_data.txt")
