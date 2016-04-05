@@ -1,6 +1,6 @@
 Codebook
  
-Dataset summary_data.Rds (please use readRDS() to read the data):
+Dataset summary_data:
  - combines training and testing data originated from "Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine" by Davide Anguita et al. [1]
  - has 4 variables SubjectID, Activity, Measurement and Average
  
