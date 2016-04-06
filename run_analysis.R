@@ -25,17 +25,21 @@ names(dtestSubjectID) <- c("SubjectID")
 # reading activities to later merge with measurments
 activTrain <- fread("./y_train.txt")
 names(activTrain) <- c("ACT")
+activTrain$rowID <- as.numeric(row.names(activTrain))
 activTest <- fread("./y_test.txt")
 names(activTest) <- c("ACT")
+activTest$rowID <- as.numeric(row.names(activTest))
 
 # reading activity labels
 activLabels <- fread("./activity_labels.txt")
 names(activLabels) <- c("ACT", "Activity")
 
-activTrain <- merge(activTrain, activLabels, by = "ACT")
-activTest <- merge(activTest, activLabels, by = "ACT")
-
 library(dplyr)
+
+activTrain <- merge(activTrain, activLabels, by = "ACT") 
+activTrain <- arrange(activTrain, rowID)
+activTest <- merge(activTest, activLabels, by = "ACT")
+activTest <- arrange(activTest, rowID)
 
 activTrain <- select(activTrain, Activity)
 activTest <- select(activTest, Activity)
