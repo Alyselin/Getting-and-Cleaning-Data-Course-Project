@@ -1,6 +1,8 @@
 # Getting-and-Cleaning-Data-Course-Project
 Getting and Cleaning Data Course Project submitted by Edgar Manukyan
 
+DEAR REVIEWER, PLEASE CONSIDER THE summary_data.txt DATA IN THIS REPPO AS MY SUBMISSION SINCE THE ONE UPLOADED ON COURSERA WAS MISTAKENLY UPLOADED FROM ONE OF MY DRAFT VERSIONS. THANK YOU FOR YOUR UNDERSTANDING.
+
 This analysis uses data from "Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine" by Davide Anguita et al. [1]. It combines data from training and test data, extracts only mean and standard deviation measurements. Also average values of each measurement were calculated for each activity and each subject. Unit of measurement is Hz.
 The following steps were involved during the analysis and are programmed in R script run_analysis.R:
 
